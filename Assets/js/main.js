@@ -4,7 +4,7 @@ const showMenu = (toggleId,navId) =>{
     nav = document.getElementById(navId)
 
     if(toggle && nav){
-        toggle.addElementListener('click', ()=>{
+        toggle.addEventListener('click', ()=>{
             nav.classList.toggle('show-menu')
         })
     }
@@ -36,7 +36,7 @@ function scrollActive(){
         }else{
             document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
             
-        }
+        },
     })
 }
 window.addEventListener('scroll', scrollActive)
@@ -46,14 +46,14 @@ function scrollHeader(){
     const header = document.getElementById('header')
     if(this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
-window.addElementListener('scroll', scrollHeader)
+window.addEventListener('scroll', scrollHeader)
 
 /*=== SHOW SCROLL TOP ===*/
 function scrollTop(){
-    const scrollTop = document.getElementById('scroll-Top')
+    const scrollTop = document.getElementById('scroll-top')
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
-window.addElementListener('scroll', scrollTop)
+window.addEventListener('scroll', scrollTop)
 
 /*=== MIXITUP FILTER PORTFOLIO ===*/
 const mixer = mixitup('.portfolio_container', {
@@ -89,7 +89,7 @@ const mySwiper = new Swiper('.testimonial_container', {
     breakpoints:{
         640:{
             slidesPerView: 2,
-        }
+        },
         1024:{
             slidesPerView: 3,
         }
@@ -104,4 +104,4 @@ gsap.from('.home_greeting, .home_name, .home_profession, .home_button', {opacity
 
 gsap.from('.nav_logo, .nav_toggle', {opacity: 0, duration: 2, delay:1.5, y:25, ease:'export.out', stagger:.2})
 gsap.from('.nav_item', {opacity: 0, duration: 2, delay:1.8, y:25, ease:'export.out', stagger:.2})
-gsap.from('.home_social-icon', {opacity: 0, duration: 2, delay:2.3, y:25, ease:'export.out', stagger:.2})
+gsap.from('.home_social-icon', {opacity: 0, duration: 2, delay:2.3 , y:25, ease:'export.out', stagger:.2})
