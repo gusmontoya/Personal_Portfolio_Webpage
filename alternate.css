@@ -62,7 +62,7 @@ body {
 
 .container:hover .overlay {
     z-index: 20;
-    color: red;
+    color: #fff;
     font-size: 50px;
     position: absolute;
     top: 30%;
