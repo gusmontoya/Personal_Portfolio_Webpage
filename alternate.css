@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.overflow-buffer {
+    max-width:100vw;
+    max-height:100vh;
+    overflow: hidden;
+    background:hsl(200, 50, 50%);
+}
+
+.quadrants {
+    width:150vw;
+    height:150vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: -55px;
+    grid-template-rows: auto auto;
+    grid-row-gap: -55px;
+    transform: rotate(-5deg);
+    top:-25vh;
+    left:-25vw;
+    position: relative;     
+}
+.container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-template-rows: 50vh;
+    grid-row-gap: 0px;
+    transform: rotate(0deg); /* Breaks without, should use alternative source */
+    overflow: hidden;
+}
+.image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay {
+    display: block;
+    width: 100%;
+    height: 80%;
+    color: black;
+} 
+.container:hover .image {
+    opacity: 1;
+}
+
+.container:hover .overlay {
+    z-index: 20;
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+}
+
+.box {
+    width:100vw;
+    height:100vh;
+}
+
+.col--cyna{
+    background:cyan;
+}
+
+.col--green{
+    background:green;
+}
+
+
+
+
+
+
+
+
+
