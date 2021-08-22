@@ -1,0 +1,148 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    font-size:1rem; /* HTML (Root) Font Size */
+    scroll-behavior: smooth;
+}
+
+body {    
+    min-width:320px;     
+    width:100vw; /* Viewport Width */    
+    min-height:100vh; /* Viewport Height */    
+    overflow-x:hidden !important; /* Overflow Visibility (x-axis) */
+    font-family:'Apercu', 'Ebrima', sans-serif;
+    line-height: 1.2;
+}
+
+/* Document */
+a {
+	text-decoration: none; 
+	color:hsl(0, 0%, 100%);
+}
+
+a:link {
+    color:hsl(0, 0%, 100%);
+}
+
+a:active {
+    color:hsl(0, 0%, 100%);
+}
+
+a:visited {
+    color:hsl(0, 0%, 100%);
+}
+
+a:hover {
+	color:hsl(0, 0%, 100%);
+} 
+
+b {}
+u {}
+i {}
+
+ul, ol, dl {}
+ol {}
+dl {}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+li {
+	list-style-position: inside;
+}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+h1,h2,h3,h4,h5,h6 {}
+
+/* Media */
+img {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+/* Form */
+label {
+	cursor: default;
+}
+input, button {
+	border: none;
+} 
+
+input {}
+button {}
+button:hover {}
+
+/* Highlight Selector */
+::selection {
+	color:hsl(0, 0%, 100%); 
+	background:hsla(0, 0%, 0%, 0.5);
+}
+
+
+/* Modifiers : B.E.M */
+/* Blues */
+.style--blue-light {
+    color:hsla(0, 100%, 100%);
+    background:hsla(200, 36%, 56%);
+}
+
+.style--blue-medium {
+    color:hsla(0, 100%, 100%);
+    background:hsla(200, 88%, 30%);
+}
+
+.style--blue-dark {
+    color:hsla(0, 100%, 100%);
+    background:hsla(197, 97%, 13%);
+}
+
+.style--blue-dark-plus {
+    color:hsla(0, 100%, 100%);
+    background:hsla(193, 97%, 6%);
+}
+
+/* Blue / Green */
+.style--ocean-light {
+    color:hsla(0, 100%, 100%);
+    background:hsl(185, 36%, 56%);
+}
+
+.style--ocean-medium {
+    color:hsla(0, 100%, 100%);
+    background:hsl(185, 36%, 30%);
+}
+
+.style--ocean-dark {
+    color:hsla(0, 100%, 100%);
+    background:hsl(185, 97%, 13%);
+}
+
+.style--ocean-dark-plus {
+    color:hsla(0, 100%, 100%);
+    background:hsla(185, 97%, 6%);
+}
+
+/* Shade / Tint */
+.style--light {
+    color:hsla(0, 100%, 100%);
+    background:hsl(211, 4%, 80%);
+} 
+
+.style--medium {
+    color:hsla(0, 100%, 100%);
+    background:hsl(211, 7%, 30%);
+} 
+
+.style--dark {
+    color:hsla(0, 100%, 100%);
+    background:hsl(0, 0%, 0%);
+} 

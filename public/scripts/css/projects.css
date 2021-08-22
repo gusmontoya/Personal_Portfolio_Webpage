@@ -1,0 +1,142 @@
+.hero{
+    min-width:100vw;
+    height:100vh;    
+    overflow:hidden;
+}
+
+.hero > img {
+    min-width:100%;
+    min-height: 100%;
+    /* filter: grayscale(100%); */
+    top:0;
+    left:0;
+    position: relative;
+    z-index:10;    
+}
+
+.overlay {
+    width:70%;
+    margin:0 auto;
+    
+    color:hsl(100, 100%, 100%);
+    font-size:1.48em;
+
+    bottom:200px;
+    left:15%;
+    position: absolute;
+    z-index:9999;
+}
+
+
+#projects {
+    width:70%;
+    margin:80px auto 0 auto;
+}
+
+.project__details {    
+    display: flex;
+}
+
+.project__details > .preview {
+    min-width:720px;
+    height:380px;
+    margin:0 0 80px 0;    
+    background:gray;
+}
+
+.project__details > .description{
+    min-height:380px;
+    margin:0 auto 0 32px;
+    padding: 0 0 32px 0;
+}
+
+
+.project__details > h2 {
+    margin:0 0 50px 32px;
+}
+
+img.project-arrow {
+    max-width:48px !important;
+    max-height:48px !important;
+    min-height:unset;
+    margin:32px 0 0 0;
+    filter: invert(100%) !important;
+}
+
+
+#call-to-action{
+    padding:128px;
+    margin:0 auto;
+    text-align: center;
+}
+
+#call-to-action h2 {
+    margin:0 0 32px 0;
+}
+
+#call-to-action button {
+    font-size:1em;
+    margin:24px 16px;
+    padding:24px 48px;
+}
+
+#call-to-action button:hover {
+    color:hsla(0, 100%, 100%);
+    background:hsl(185, 36%, 30%);
+    cursor: pointer;
+}
+
+#call-to-action > .copyright {
+    margin:32px 0 0 0;
+}
+
+
+/*-----	Responsive -----*/
+@media all and (max-width:1200px) and (min-width:0px){
+    #projects {
+        width:100%;
+        margin:80px auto 0 auto;
+    }
+    
+    .project__details {
+        max-width:100vw;
+        min-height:100%;
+        display: block;
+        overflow:hidden;
+    }
+
+    .project__details > .preview {        
+        max-height:380px;
+        overflow: hidden;
+    }
+    
+    .project__details .preview > img{
+        max-width:100%;
+        min-height:380px;
+    }
+
+    .project__details > h2{
+        margin:0 0 0 32px;
+    }    
+
+    .project__details > .description{
+        width: 70%;
+        margin:-50px auto 0 auto;
+    }
+    
+    .project__details > p {
+        margin:50px 0 0 0px;
+    }
+    
+    .project-arrow {
+        max-width:48px !important;
+        max-height:48px !important;
+        margin:32px 0 0 0 !important;
+        filter: invert(100%) !important;
+        display:block;
+    }
+
+    #call-to-action{
+        padding:64px;
+    }
+}

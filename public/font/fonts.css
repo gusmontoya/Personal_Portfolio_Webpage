@@ -1,0 +1,16 @@
+/* Apercu Pro Font: https://www.onlinewebfonts.com/download/cc63ce6e304da54106961b31a1d744a9 */
+@font-face {
+    font-family:Apercu;
+    src: url(apercu/Apercu.ttf);
+}
+
+@font-face {
+  font-family:Apercu-Bold;
+  src: url(apercu/Apercu-Bold.ttf);
+}
+
+@font-face {
+  font-family:Apercu-Regular;
+  src: url(apercu/Apercu-Regular.ttf);
+}
+  
